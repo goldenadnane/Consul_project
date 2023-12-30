@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: Gateway
+  cloud:
+    consul:
+      enabled: true
+      host: localhost
+      port: 8500 # Port par défaut de Consul
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
